@@ -29,7 +29,7 @@ class LeaderBoard extends React.Component{
     }
 
     getRankings(){
-        fetch('http://localhost:3000/leaderboard', {
+        fetch('https://rocky-refuge-82156.herokuapp.com/leaderboard', {
             method: 'get',
             headers: {'Content-Type': 'application/json'}
         })

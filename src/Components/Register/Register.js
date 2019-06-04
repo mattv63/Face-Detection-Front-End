@@ -45,7 +45,7 @@ class Register extends React.Component{
     }
     onSubmitSignIn = () => {
         if(this.checkUsername() && this.checkEmail() && this.checkPassword()){
-            fetch('http://localhost:3000/register', {
+            fetch('https://rocky-refuge-82156.herokuapp.com/register', {
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
